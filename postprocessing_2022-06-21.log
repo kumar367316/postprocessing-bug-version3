@@ -1,0 +1,570 @@
+2022-06-21 11:14:48,143 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 18696 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 11:14:48,147 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 11:14:48,910 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 11:14:48,928 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 11:14:48,996 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 11:14:48,998 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:14:48,998 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:14:48,998 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:14:48,998 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 11:14:48,998 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:14:48,998 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:14:48,998 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:14:48,998 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:14:48,999 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:14:49,136 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 11:14:49,407 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 11:14:49,422 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:14:49,423 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 11:14:49,423 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 11:14:49,714 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 11:14:49,715 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1501 ms
+2022-06-21 11:14:49,799 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 11:14:49,804 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 11:14:49,886 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 11:14:49,896 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 11:14:49,897 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 11:14:49,898 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 11:14:49,898 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 11:14:49,898 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 11:14:49,900 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 11:14:50,909 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:14:50,934 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 11:14:51,320 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 4.127 seconds (JVM running for 9.466)
+2022-06-21 11:15:00,065 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 11:15:02,713 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 11:15:08,997 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:15:08,998 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:15:08,998 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:15:08,998 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:15:14,313 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 11:15:24,510 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 11:15:50,181 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - exception:Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor q5-20020aa79605000000b0051c6613b5basm10157798pfg.134 - gsmtp
+
+2022-06-21 11:15:51,277 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail sent successfully
+2022-06-21 11:15:54,653 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 11:16:06,953 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:16:06,954 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:16:06,954 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:16:06,954 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:25:09,327 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 24408 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 11:25:09,332 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 11:25:10,109 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 11:25:10,126 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 11:25:10,201 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 11:25:10,202 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:25:10,203 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:25:10,203 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:25:10,203 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 11:25:10,203 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:25:10,203 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:25:10,203 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:25:10,203 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:25:10,204 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:25:10,327 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 11:25:10,606 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 11:25:10,621 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:25:10,622 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 11:25:10,622 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 11:25:10,883 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 11:25:10,884 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1481 ms
+2022-06-21 11:25:10,955 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 11:25:10,961 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 11:25:11,028 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 11:25:11,041 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 11:25:11,041 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 11:25:11,042 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 11:25:11,042 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 11:25:11,042 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 11:25:11,044 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 11:25:12,071 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:25:12,096 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 11:25:12,438 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 4.021 seconds (JVM running for 7.584)
+2022-06-21 11:26:00,083 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 11:26:02,525 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 11:26:09,405 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:26:09,405 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:26:09,406 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:26:09,406 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:26:17,302 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 11:26:28,634 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 11:26:42,048 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - exception:Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor b9-20020a170902bd4900b0016782c55790sm7674181plx.232 - gsmtp
+
+2022-06-21 11:26:43,878 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail sending failure
+2022-06-21 11:26:50,930 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 11:43:35,005 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 6780 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 11:43:35,009 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 11:43:35,787 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 11:43:35,807 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 11:43:35,879 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 11:43:35,881 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:43:35,882 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:43:35,882 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:43:35,882 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 11:43:35,882 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:43:35,882 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:43:35,883 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:43:35,883 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:43:35,883 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:43:36,025 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 11:43:36,315 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 11:43:36,325 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:43:36,326 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 11:43:36,326 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 11:43:36,654 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 11:43:36,654 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1571 ms
+2022-06-21 11:43:36,737 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 11:43:36,741 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 11:43:36,815 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 11:43:36,825 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 11:43:36,826 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 11:43:36,827 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 11:43:36,827 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 11:43:36,827 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 11:43:36,829 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 11:43:37,952 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:43:37,982 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 11:43:38,339 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 4.234 seconds (JVM running for 9.285)
+2022-06-21 11:44:00,153 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 11:44:04,258 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 11:44:11,050 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:44:11,051 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:44:11,051 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:44:11,052 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:44:15,212 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 11:44:24,353 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 11:44:55,576 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - exception:Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials e11-20020a63744b000000b003c25dfd7372sm10087312pgn.26 - gsmtp
+
+2022-06-21 11:44:56,087 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail sending failure
+2022-06-21 11:44:59,876 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 11:55:13,103 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 21088 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 11:55:13,107 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 11:55:13,853 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 11:55:13,871 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 11:55:13,937 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 11:55:13,938 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:55:13,938 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:55:13,939 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:55:13,939 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 11:55:13,939 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:55:13,939 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:55:13,939 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:55:13,939 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:55:13,940 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:55:14,074 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 11:55:14,361 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 11:55:14,374 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:55:14,374 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 11:55:14,375 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 11:55:14,607 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 11:55:14,608 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1414 ms
+2022-06-21 11:55:14,684 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 11:55:14,688 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 11:55:14,746 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 11:55:14,754 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 11:55:14,754 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 11:55:14,754 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 11:55:14,755 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 11:55:14,755 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 11:55:14,756 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 11:55:15,736 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:55:15,759 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 11:55:16,108 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 3.987 seconds (JVM running for 8.063)
+2022-06-21 11:56:00,078 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 11:56:02,860 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 11:56:09,401 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:56:09,401 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:56:09,402 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:56:09,402 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:56:27,553 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 11:56:36,846 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 11:56:55,690 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - exception:Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials bb2-20020a17090b008200b001eca3c66f6asm3430850pjb.43 - gsmtp
+
+2022-06-21 11:56:56,251 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail sending failure
+2022-06-21 11:57:00,206 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 11:57:00,641 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 11:58:00,449 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 11:58:08,475 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:58:08,475 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:58:08,475 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:58:08,476 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 11:59:35,003 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 16428 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 11:59:35,007 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 11:59:35,733 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 11:59:35,753 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 11:59:35,826 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 11:59:35,827 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:59:35,827 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:59:35,828 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:59:35,828 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 11:59:35,828 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:59:35,828 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 11:59:35,828 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:59:35,828 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:59:35,828 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 11:59:35,978 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 11:59:36,264 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 11:59:36,274 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:59:36,274 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 11:59:36,275 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 11:59:36,496 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 11:59:36,496 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1422 ms
+2022-06-21 11:59:36,593 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 11:59:36,598 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 11:59:37,790 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 11:59:37,815 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 11:59:38,171 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 4.05 seconds (JVM running for 7.294)
+2022-06-21 12:00:00,082 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 12:00:09,390 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:00:09,390 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:00:09,391 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:00:09,391 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:01:34,563 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 12:01:44,440 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 12:02:40,536 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 16412 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 12:02:40,540 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 12:02:41,243 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 12:02:41,259 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 12:02:41,333 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 12:02:41,335 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:02:41,336 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:02:41,336 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:02:41,336 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 12:02:41,336 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:02:41,336 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:02:41,336 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:02:41,336 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:02:41,336 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:02:41,477 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 12:02:41,787 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 12:02:41,803 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:02:41,805 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 12:02:41,805 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 12:02:42,027 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 12:02:42,028 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1423 ms
+2022-06-21 12:02:42,113 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 12:02:42,117 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 12:02:43,185 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:02:43,212 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 12:02:43,585 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 3.96 seconds (JVM running for 7.614)
+2022-06-21 12:03:00,120 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 12:03:02,973 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:03:11,133 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:03:11,135 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:03:11,135 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:03:11,135 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:03:19,426 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 12:03:32,167 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 12:03:51,326 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail send successfully : swainkumar10@gmail.com
+2022-06-21 12:03:55,152 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 12:13:36,087 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 20672 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 12:13:36,091 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 12:13:36,845 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 12:13:36,861 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 12:13:36,927 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 12:13:36,929 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:13:36,929 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:13:36,930 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:13:36,930 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 12:13:36,931 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:13:36,931 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:13:36,931 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:13:36,931 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:13:36,931 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:13:37,060 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 12:13:37,352 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 12:13:37,361 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:13:37,362 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 12:13:37,363 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 12:13:37,611 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 12:13:37,612 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1460 ms
+2022-06-21 12:13:37,709 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 12:13:37,716 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 12:13:37,789 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 12:13:37,801 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 12:13:37,802 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 12:13:37,802 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 12:13:37,804 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 12:13:37,804 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 12:13:37,806 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 12:13:38,914 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:13:38,940 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 12:13:39,293 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 4.129 seconds (JVM running for 8.161)
+2022-06-21 12:14:00,170 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 12:14:04,259 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:14:12,628 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:14:12,628 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:14:12,629 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:14:12,629 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:16:43,402 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 12:16:53,908 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 12:17:31,112 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail send successfully : swainkumar10@gmail.com
+2022-06-21 12:17:34,526 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 12:17:35,834 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:30:28,918 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 24168 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 12:30:28,922 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 12:30:29,716 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 12:30:29,737 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 12:30:29,813 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 12:30:29,815 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:30:29,815 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:30:29,815 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:30:29,816 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 12:30:29,816 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:30:29,816 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:30:29,816 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:30:29,816 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:30:29,817 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:30:29,962 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 12:30:30,329 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 12:30:30,342 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:30:30,342 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 12:30:30,343 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 12:30:32,313 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 12:30:32,313 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 3319 ms
+2022-06-21 12:30:32,399 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 12:30:32,404 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 12:30:32,473 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 12:30:32,487 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 12:30:32,487 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 12:30:32,488 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 12:30:32,488 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 12:30:32,489 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 12:30:32,491 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 12:30:33,610 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:30:33,637 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 12:30:34,024 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 6.807 seconds (JVM running for 10.808)
+2022-06-21 12:31:00,092 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 12:31:02,644 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:31:11,724 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:31:11,724 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:31:11,726 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:31:11,726 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:31:19,082 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 12:31:31,654 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 12:31:59,960 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail send successfully : swainkumar10@gmail.com
+2022-06-21 12:32:03,379 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 12:32:03,723 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:33:00,375 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:33:00,715 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:34:00,428 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:34:26,442 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - post processing archive completed successfully
+2022-06-21 12:35:00,436 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:35:00,873 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:36:00,477 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:36:00,816 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:37:00,493 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:37:00,857 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:38:00,379 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:38:00,801 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:39:00,360 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:39:00,716 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:40:00,377 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:40:00,734 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:41:00,398 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:41:00,740 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:55:38,233 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 22428 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 12:55:38,241 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 12:55:39,075 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 12:55:39,105 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 12:55:39,226 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 12:55:39,227 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:55:39,228 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:55:39,228 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:55:39,228 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 12:55:39,228 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:55:39,229 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 12:55:39,229 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:55:39,229 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:55:39,229 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 12:55:39,379 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 12:55:39,673 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 12:55:39,684 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:55:39,684 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 12:55:39,685 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 12:55:39,993 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 12:55:39,994 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1687 ms
+2022-06-21 12:55:40,091 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 12:55:40,095 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 12:55:40,167 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 12:55:40,184 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 12:55:40,185 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 12:55:40,185 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 12:55:40,186 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 12:55:40,186 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 12:55:40,187 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 12:55:41,184 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 12:55:41,206 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 12:55:41,748 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 4.58 seconds (JVM running for 8.019)
+2022-06-21 12:56:00,081 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 12:57:13,267 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - post processing archive completed successfully
+2022-06-21 12:57:35,222 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:57:35,224 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:57:35,225 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:57:35,225 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:57:35,225 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:57:35,226 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 12:58:11,275 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220421063994W005443213FOhsgF_ST_DE.pdf
+2022-06-21 12:58:17,792 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 12:58:26,205 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 12:58:31,092 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:28032022467852W005156532656weGT_SelfAddressed.pdf
+2022-06-21 12:58:31,749 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:29032022902090W003248578652YdHR_SelfAddressed.pdf
+2022-06-21 12:58:33,667 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220421063904W001235532FOwskF_ST_DC.pdf
+2022-06-21 12:58:36,401 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220421063904W004345534YTgdoR_ST_DC.pdf
+2022-06-21 12:58:38,550 [scheduling-1] WARN  o.a.pdfbox.multipdf.PDFMergerUtility               - Removed /IDTree from /Names dictionary, doesn't belong there
+2022-06-21 12:58:55,944 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail send successfully : swainkumar10@gmail.com
+2022-06-21 12:58:58,960 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 12:58:59,301 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 12:59:00,348 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 12:59:00,674 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:02:19,155 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 11492 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 13:02:19,159 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 13:02:19,851 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 13:02:19,868 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 13:02:19,932 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 13:02:19,934 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:02:19,934 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:02:19,934 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:02:19,935 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 13:02:19,935 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:02:19,935 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:02:19,935 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:02:19,935 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:02:19,935 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:02:20,070 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 13:02:20,328 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 13:02:20,340 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 13:02:20,341 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 13:02:20,341 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 13:02:20,565 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 13:02:20,566 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1342 ms
+2022-06-21 13:02:20,638 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 13:02:20,642 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 13:02:20,687 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 13:02:20,695 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 13:02:20,696 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 13:02:20,696 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 13:02:20,696 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 13:02:20,697 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 13:02:20,698 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 13:02:21,718 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 13:02:21,738 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 13:02:22,082 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 3.932 seconds (JVM running for 7.874)
+2022-06-21 13:03:00,077 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 13:03:58,656 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - post processing archive completed successfully
+2022-06-21 13:04:20,336 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 13:04:20,337 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 13:04:20,338 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 13:04:20,339 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 13:04:20,339 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 13:04:20,339 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - unable to process:invalid document type 
+2022-06-21 13:04:20,709 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220421063994W005443213FOhsgF_ST_DE.pdf
+2022-06-21 13:04:26,616 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006554657TTYoidf_PG.pdf
+2022-06-21 13:04:36,251 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 13:04:41,182 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:28032022467852W005156532656weGT_SelfAddressed.pdf
+2022-06-21 13:04:41,547 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:29032022902090W003248578652YdHR_SelfAddressed.pdf
+2022-06-21 13:04:43,345 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220421063904W001235532FOwskF_ST_DC.pdf
+2022-06-21 13:04:46,864 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220421063904W004345534YTgdoR_ST_DC.pdf
+2022-06-21 13:04:49,715 [scheduling-1] WARN  o.a.pdfbox.multipdf.PDFMergerUtility               - Removed /IDTree from /Names dictionary, doesn't belong there
+2022-06-21 13:04:57,346 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail send successfully : swainkumar10@gmail.com
+2022-06-21 13:04:59,450 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 13:04:59,764 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:05:00,545 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 13:05:00,858 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:06:00,323 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:06:00,651 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 13:07:00,356 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 13:07:00,687 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:15:56,762 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 25424 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 13:15:56,767 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 13:15:57,508 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 13:15:57,530 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 13:15:57,604 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 13:15:57,606 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:15:57,606 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:15:57,606 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:15:57,607 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 13:15:57,607 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:15:57,607 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:15:57,607 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:15:57,607 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:15:57,607 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:15:57,725 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 13:15:58,006 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 13:15:58,016 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 13:15:58,017 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 13:15:58,017 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 13:15:58,237 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 13:15:58,237 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1398 ms
+2022-06-21 13:15:58,329 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 13:15:58,334 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 13:15:58,377 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 13:15:58,387 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 13:15:58,388 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 13:15:58,388 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 13:15:58,388 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 13:15:58,390 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 13:15:58,391 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 13:15:59,366 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 13:15:59,391 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 13:15:59,746 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 3.905 seconds (JVM running for 7.427)
+2022-06-21 13:16:00,074 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 13:16:02,771 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:16:07,920 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 13:16:12,068 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - The license has expired:no need to print pcl file with evalution copies
+2022-06-21 13:16:12,069 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - Exception:The license has expired.
+2022-06-21 13:16:17,866 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail send successfully : swainkumar10@gmail.com
+2022-06-21 13:16:20,546 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - smartcomm post processing successfully
+2022-06-21 13:20:22,623 [main] INFO  c.c.p.PostProcessingApplication                    - Starting PostProcessingApplication using Java 1.8.0_131 on HTCLT2438 with PID 19828 (C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main\target\classes started by kumar.charanswain in C:\Users\kumar.charanswain\Downloads\today-test-old-code\postprocessing-tomcat-version-main\postprocessing-tomcat-version-main)
+2022-06-21 13:20:22,628 [main] INFO  c.c.p.PostProcessingApplication                    - No active profile set, falling back to 1 default profile: "default"
+2022-06-21 13:20:23,347 [main] INFO  o.s.cloud.context.scope.GenericScope               - BeanFactory id=4b5fb449-1571-3261-a0e4-8a74cfbc6521
+2022-06-21 13:20:23,364 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2022-06-21 13:20:23,438 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2022-06-21 13:20:23,440 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:20:23,440 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:20:23,440 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:20:23,440 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2022-06-21 13:20:23,441 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:20:23,441 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2022-06-21 13:20:23,441 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:20:23,441 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource Config resource 'file [application.properties]' via location 'application.properties' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:20:23,441 [main] INFO  c.u.j.EncryptablePropertySourceConverter           - Converting PropertySource defaultProperties [org.springframework.boot.DefaultPropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2022-06-21 13:20:23,567 [main] INFO  c.u.j.filter.DefaultLazyPropertyFilter             - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2022-06-21 13:20:23,836 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-06-21 13:20:23,845 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 13:20:23,846 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-06-21 13:20:23,846 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-06-21 13:20:24,076 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-06-21 13:20:24,076 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 1388 ms
+2022-06-21 13:20:24,156 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver                - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2022-06-21 13:20:24,160 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector                - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2022-06-21 13:20:24,198 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2022-06-21 13:20:24,208 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2022-06-21 13:20:24,208 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2022-06-21 13:20:24,208 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2022-06-21 13:20:24,209 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2022-06-21 13:20:24,209 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2022-06-21 13:20:24,210 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor               - Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2022-06-21 13:20:25,215 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 13:20:25,240 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-21 13:20:25,579 [main] INFO  c.c.p.PostProcessingApplication                    - Started PostProcessingApplication in 3.851 seconds (JVM running for 7.232)
+2022-06-21 13:21:00,089 [scheduling-1] INFO  c.a.c.i.jackson.JacksonVersion                     - Package versions: jackson-annotations=2.13.1, jackson-core=2.13.1, jackson-databind=2.13.1, jackson-dataformat-xml=2.13.1, jackson-datatype-jsr310=2.13.1, azure-core=1.25.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-06-21 13:21:06,999 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - process file details:20220215063904W006543278FTbmkF_PG.pdf
+2022-06-21 13:21:11,723 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - Exception:The license has expired.
+2022-06-21 13:21:17,628 [scheduling-1] INFO  com.custom.postprocessing.util.EmailUtil           - mailStatus:mail send successfully : swainkumar10@gmail.com
+2022-06-21 13:21:20,546 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - The license has expired:no need to print pcl file with evalution copies
+2022-06-21 13:21:20,918 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:22:00,350 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:22:00,750 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 13:23:00,360 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:23:01,213 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 13:24:00,357 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:24:00,677 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 13:25:00,351 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
+2022-06-21 13:25:00,682 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:26:00,346 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for archive
+2022-06-21 13:26:00,668 [scheduling-1] INFO  c.c.p.scheduler.PostProcessingScheduler            - no file for post processing
